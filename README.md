@@ -1,23 +1,49 @@
-# Nextra Docs Template 
+# Introduction
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+![image description](https://3649716663-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FJTaA8UtbQA9Mn3IKor1y%2Fuploads%2Fgit-blob-e0e7378a871952c062a51ff5ccb7028f35440fce%2FJIMOV_logo.png?alt=media)
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+This project is an open-source API for retrieving multimedia content such as anime, movies and series, news, and manga in both Spanish and English. The API is built using JavaScript and the Express.js framework. The API allows users to search for content by keywords and retrieve detailed information about the content such as title, description, and language. The API also allows users to filter results by language and content type.
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+## Installation
 
-## Quick Start
+To use the API, you will need to have Node.js and npm installed on your machine. Once you have these, you can clone the repository and install the dependencies by running the following commands:
 
-Click the button to clone this repository and deploy it on Vercel:
+```bash
+git clone https://github.com/koikiss-dev/jimov_api.git
+cd jimov_api
+npm install
+```
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+## Usage
 
-## Local Development
+The API can be started by running the following command:
 
-First, run `pnpm i` to install the dependencies.
+```bash
+npm run test && npm run start:dev
+```
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+## How to Contribute
 
-## License
+If you are interested in contributing to the project, follow these instructions:
 
-This project is licensed under the MIT License.
+1. Fork the repository.
+2. Make changes and test.
+3. Submit a pull request.
+
+## Authors
+
+- [@Koikiss](https://github.com/koikiss-dev)
+- [@Maw](https://github.com/Mawfyy)
+- [@Zukaritasu](https://github.com/Zukaritasu)
+- [@Tokyo](https://github.com/TokyoTF)
+- [@Victor](https://github.com/barrientosvctor)
+
+## LICENSE
+
+Copyright (c) 2023 JIMOV
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
