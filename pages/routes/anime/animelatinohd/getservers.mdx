@@ -1,0 +1,67 @@
+import { Tab, Tabs } from "nextra-theme-docs";
+
+# Get Anime Episode Servers from AnimeLatinoHD
+
+This endpoint allows you to get the servers for a specific anime episode from AnimeLatinoHD.
+
+- **Method:** GET
+- **Route:** `/anime/animelatinohd/episode/:episode`
+
+## URL Parameter
+
+| Parameter | Type   | Description                                                         |
+| --------- | ------ | ------------------------------------------------------------------- |
+| episode   | string | Episode number of the anime to fetch servers for from AnimeLatinoHD |
+
+## Response
+
+The response of this endpoint contains the servers for the requested anime episode from AnimeLatinoHD.
+
+<Tabs items={["200"]}>
+  <Tab>**Type:** `application/json` </Tab>
+</Tabs>
+
+```json
+{
+  "name": "string",
+  "url": "/anime/animelatinohd/episode/${string}",
+  "number": "number | string",
+  "servers": [
+    {
+      "name": "string",
+      "url": "string",
+      "file_url": "string"
+    }
+  ],
+  "image": "string"
+}
+```
+
+## Example of use
+
+```bash
+GET https://jimov-api.vercel.app/anime/animelatinohd/episode/shingeki-no-kyojin-3-12
+```
+
+<Tabs items={["JavaScript", "Python"]}>
+  <Tab>
+    ```javascript 
+    const response = await fetch("https://jimov-api.vercel.app/anime/animelatinohd/episode/shingeki-no-kyojin-3-12");
+const data = await response.json();
+console.log(data);
+    ```
+  </Tab>
+   <Tab>
+    ```python 
+    import requests
+
+response = requests.get("https://jimov-api.vercel.app/anime/animelatinohd/episode/shingeki-no-kyojin-3-12")
+data = response.json()
+print(data)
+
+    ```
+
+  </Tab>
+</Tabs>
+
+This example demonstrates how to make a GET request to the `/anime/animelatinohd/episode/shingeki-no-kyojin-3-12` route to fetch the servers for episode shingeki-no-kyojin-3-12 from AnimeLatinoHD. The result is displayed in the console.

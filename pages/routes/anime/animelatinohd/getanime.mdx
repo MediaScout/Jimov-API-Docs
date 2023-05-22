@@ -1,21 +1,21 @@
 import { Tab, Tabs } from "nextra-theme-docs";
 
-# Obtain anime information by name
+# Get Anime Information from AnimeLatinoHD
 
-This endpoint allows you to obtain information about an anime in AnimeFlv.
+This endpoint allows you to retrieve information about an anime from AnimeLatinoHD.
 
 - **Method:** GET
-- **Path:** `/anime/flv/name/:name`
+- **Path:** `/anime/animelatinohd/name/:name`
 
 ## URL parameters
 
-| Parameter | Type   | Description                                 |
-| --------- | ------ | ------------------------------------------- |
-| name      | string | Name of the anime to search for in AnimeFlv |
+| Parameter | Type   | Description                                  |
+| --------- | ------ | -------------------------------------------- |
+| name      | string | Name of the anime to search in AnimeLatinoHD |
 
 ## Response
 
-The response from this endpoint contains the requested anime information in AnimeFlv.
+The response of this endpoint contains the information of the requested anime from AnimeLatinoHD.
 
 <Tabs items={["200"]}>
   <Tab>**Type:** `application/json` </Tab>
@@ -29,7 +29,7 @@ The response from this endpoint contains the requested anime information in Anim
   /** Anime identifier that can be used when the anime name is not used in the URL. */
   "id?": "number",
   /** The URL or location of the anime in the API */
-  "url": "/anime/flv/name/${string}",
+  "url": "/anime/animelatinohd/name/${string}",
   /** The anime synopsis */
   "synopsis?": "string",
   /** 
@@ -52,7 +52,7 @@ The response from this endpoint contains the requested anime information in Anim
   /** Chronology of the anime. It is an array that contains the anime related to it. */
   "chronology?": {
     "name": "string",
-    "url": "/anime/flv/name/${string}",
+    "url": "/anime/animelatinohd/name/${string}",
     "image?": "string"
   },
   /** 
@@ -68,14 +68,14 @@ The response from this endpoint contains the requested anime information in Anim
 ## Example of use
 
 ```bash
-GET https://jimov-api.vercel.app/anime/flv/name/wonder-egg-priority
+GET https://jimov-api.vercel.app/anime/animelatinohd/name/shingeki-no-kyojin-3
 ```
 
 <Tabs items={["JavaScript", "Python"]}>
   <Tab>
     ```javascript 
     const response = await
-    fetch("https://jimov-api.vercel.app/anime/flv/name/wonder-egg-priority"); const data = await
+    fetch("https://jimov-api.vercel.app/anime/animelatinohd/name/shingeki-no-kyojin-3"); const data = await
     response.json(); console.log(data); 
     ```
   </Tab>
@@ -83,7 +83,7 @@ GET https://jimov-api.vercel.app/anime/flv/name/wonder-egg-priority
     ```python 
     import requests
 
-    response = requests.get("https://jimov-api.vercel.app/anime/flv/name/wonder-egg-priority")
+    response = requests.get("https://jimov-api.vercel.app/anime/animelatinohd/name/shingeki-no-kyojin-3")
     data = response.json()
     print(data)
     ```
@@ -91,4 +91,4 @@ GET https://jimov-api.vercel.app/anime/flv/name/wonder-egg-priority
   </Tab>
 </Tabs>
 
-This example shows how to perform a GET request to the path `/anime/flv/name/attack-on-titan` to get information about the anime "Attack on Titan" on AnimeFlv. The result is displayed in the console.
+This example demonstrates how to make a GET request to the `/anime/animelatinohd/name/shingeki-no-kyojin-3` route to retrieve information about the anime "Shingeki no kyojin" from AnimeLatinoHD. The result is displayed in the console.
