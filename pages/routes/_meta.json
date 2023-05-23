@@ -1,4 +1,4 @@
 {
   "start": "Before starting",
-  "anime": "Anime"
+  "anime": { "title": "Anime", "theme": { "collapsed": true } }
 }
