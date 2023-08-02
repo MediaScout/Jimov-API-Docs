@@ -33,8 +33,8 @@ export default defineAppConfig({
     },
     github: {
       edit: true,
-      repo: "https://github.com/koikiss-dev/jimov_api",
-      owner: "koikiss-dev",
+      repo: "https://github.com/MediaScout/Jimov-API-Docs",
+      owner: "MediaScout",
       branch: "main",
     },
   },
